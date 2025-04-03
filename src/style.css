@@ -1,0 +1,11 @@
+body {
+  background-image: linear-gradient(#f8fbfc, #51aef5);
+  background-color: #f8fbfc;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body #header-weather-app {
+  background-color: black;
+}
