@@ -1,11 +1,13 @@
 body {
-  background-image: linear-gradient(#f8fbfc, #51aef5);
-  background-color: #f8fbfc;
+  background-image: linear-gradient(#cfeeff, #299df6);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body #header-weather-app {
-  background-color: black;
+body #app-container {
+  background-color: rgba(255, 255, 255, 0.807);
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
 }
