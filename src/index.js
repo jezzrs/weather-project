@@ -1,3 +1,6 @@
+
+
+
 function changeTemperature(response) {
   let temperatureNumber = document.querySelector("#temperature-number");
   let temperature = Math.round(response.data.temperature.current);
@@ -7,6 +10,9 @@ function changeTemperature(response) {
   let dateTimeElements= document.querySelector ("#date-time")
   let date = new Date(response.date.time*1000);
   let iconElement = document.querySelector ("#icon");
-  let weatherDetail = document.querySelector("#weather-description")
+  let weatherDetail = document.querySelector("#weather-description");
+
+
   
 }
+
