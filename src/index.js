@@ -40,3 +40,10 @@ function formatDate(date) {
   if(minutes<10){minutes=`0${minutes}`;
 }
 return`${day} ${hours}:${minutes}`}
+
+
+function searchCity(city){
+  let apiKey = "b21d503dafo2f9t8344f5f54960e518f"
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(changeTemperature);
+}
