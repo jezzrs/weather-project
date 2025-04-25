@@ -13,6 +13,12 @@ function changeTemperature(response) {
   let weatherDetail = document.querySelector("#weather-description");
 
 
+  cityName.innerHTML = response.data.city;
+  dateTimeElements.innerHTML = FormatDate (date);
+  weatherDetail.innerHTML = response.data.condition.description;
+  humidityNumber.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedNumber.innerHTML= `${response.data.wind.speed}km/h`;
+  temperatureNumber.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   
 }
-
