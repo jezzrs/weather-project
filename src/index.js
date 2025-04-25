@@ -47,3 +47,13 @@ function searchCity(city){
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(changeTemperature);
 }
+
+function stopRefreshSubmit (event){
+  event.preventDefault ();
+  let searchInput = document.querySelector("#search-weather-input");
+
+  searchCity(searchInput.value);
+}
+
+let searchFormElement = document.querySelector("#search-weather-form");
+searchFormElement.addEventListener("submit",stopRefreshSubmit);
