@@ -26,6 +26,11 @@ function changeTemperature(response) {
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
+  let day = date.getDay();
+
+  if(minutes<10){minutes=`0${minutes}`;
+}
+
   let days = [
     "Sunday",
     "Monday",
@@ -33,14 +38,11 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",];
+    "Saturday"
+  ];
 
-  let day = days[date.getDay()];
-
-  if(minutes<10){minutes=`0${minutes}`;
-}
-return`${day} ${hours}:${minutes}`}
-
+let formatedDate = days[day];
+return `${formattedDate} ${hours} ${minutes}`;}
 
 function searchCity(city){
   let apiKey = "b21d503dafo2f9t8344f5f54960e518f"
