@@ -1,4 +1,4 @@
-weather-app {
+body {
   background: white;
   max-width: 600px;
   margin: 60px auto;
@@ -21,7 +21,7 @@ header {
   display: block;
 }
 
-.current-city {
+.city {
   font-size: 38px;
   font-weight: 900;
   margin: 0;
