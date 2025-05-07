@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
@@ -10,48 +9,44 @@
   </head>
   <body>
     <div id="app-container">
-      <div id="header-weather-app">
-        <header>
-          <form id="search-weather-form">
-            <input
-              type="search"
-              placeholder="Search for a city"
-              required
-              id="search-weather-input"
-            />
-            <input type="submit" value="Search" id="submit-button" />
-          </form>
-        </header>
-        <main>
-          <div id="weather-data">
-            <div>
-              <h1 id="city">Paris</h1>
-                <span id="date-time"> Tuesday 14:49</span>
+      <header>
+        <form id="search-weather-form">
+          <input
+            type="search"
+            placeholder="Search for a city"
+            required
+            id="search-weather-input"
+          />
+          <input type="submit" value="Search" id="submit-button" />
+        </form>
+      </header>
+      <main>
+        <div id="weather-data">
+          <h1 id="city">Paris</h1>
+          <span id="date-time"> Tuesday 14:49</span>
 
-                <br />Humidity: <strong id="humidity">66%</strong> <br />Wind:
-                <strong id="wind-speed">3.13 km</strong>
-              </p>
-            </div>
-            <div class="weather-app-temperature">
-              <div id="icon">
-                <img
-                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                />
-              </div>
-              <div id="temperature-number">12</div>
-              <div id="temperature-unit">°C</div>
-              <span id="weather-description"> scattered clouds</span>
-            </div>
+          <br />Humidity: <strong id="humidity">66%</strong> <br />Wind:
+          <strong id="wind-speed">3.13 km</strong>
+        </div>
+        <div class="weather-app-temperature">
+          <div id="icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+            />
           </div>
-        </main>
-      </div>
+          <div id="temperature-number">12</div>
+          <div id="temperature-unit">°C</div>
+          <span id="weather-description"> scattered clouds</span>
+        </div>
+        <footer>
+          <br />This project was coded by
+          <a href="https://github.com/jezzrs/">Jezz Ramirez</a>, is open-sourced
+          on <a href="https://github.com/jezzrs/weather-project">GitHub</a> and
+          hosted on Netlify
+        </footer>
+      </main>
     </div>
-    <footer>
-      <br />This project was coded by
-      <a href="https://github.com/jezzrs/">Jezz Ramirez</a>, is open-sourced on
-      <a href="https://github.com/jezzrs/weather-project">GitHub</a> and hosted
-      on Netlify
-    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
