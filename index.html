@@ -19,24 +19,34 @@
           />
           <input type="submit" value="Search" id="submit-button" />
         </form>
+        <!--search weather form-->
       </header>
       <main>
-        <div id="weather-data">
-          <h1 id="city">Paris</h1>
-          <span id="date-time"> Tuesday 14:49</span>
+        <div id="weather-data-container">
+          <div id="weather-data_first-subcontainer">
+            <h1 id="city">Paris</h1>
 
-          <br />Humidity: <strong id="humidity">66%</strong> <br />Wind:
-          <strong id="wind-speed">3.13 km</strong>
-        </div>
-        <div class="weather-app-temperature">
-          <div id="icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-            />
+            <p>
+              <strong
+                ><span id="date-time"> Tuesday 14:49</span>,
+                <span id="weather-description"> scattered clouds</span>
+                <br />Humidity: <span id="humidity">66%</span>, Wind:
+                <span id="wind-speed">3.13 km</span></strong
+              >
+            </p>
           </div>
-          <div id="temperature-number">12</div>
-          <div id="temperature-unit">°C</div>
-          <span id="weather-description"> scattered clouds</span>
+
+          <div id="weather-data_second-subcontainer">
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              />
+            </div>
+            <div id="temperature-container">
+              <div id="temperature-number">12</div>
+              <div id="temperature-unit">°C</div>
+            </div>
+          </div>
         </div>
         <footer>
           <br />This project was coded by
@@ -46,6 +56,7 @@
         </footer>
       </main>
     </div>
+    <!--div main container-->
 
     <script src="src/index.js"></script>
   </body>
