@@ -50,6 +50,7 @@ function stopRefreshSubmit(event) {
   let searchInput = document.querySelector("#search-weather-input");
 
   searchCity(searchInput.value);
+  searchInput.value = "";
 }
 
 let searchFormElement = document.querySelector("#search-weather-form");
